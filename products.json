@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "Chapéu Panamá",
+    "preco": "R$ 199,90",
+    "imagem": "/images/morena.jpg"
+  },
+  {
+    "nome": "Chapéu Fedora Clássico",
+    "preco": "R$ 249,90",
+    "imagem": "/images/western.webp"
+  },
+  {
+    "nome": "Chapéu Country",
+    "preco": "R$ 179,90",
+    "imagem": "/images/loira.jpg"
+  },
+  {
+    "nome": "Chapéu de Palha Rústico",
+    "preco": "R$ 139,90",
+    "imagem": "/images/cowboy.jpg"
+  },
+  {
+    "nome": "Chapéu de Palha Rústico",
+    "preco": "R$ 139,90",
+    "imagem": "/images/cowboy.jpg"
+  }
+]

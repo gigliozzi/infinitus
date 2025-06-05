@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapelaria Elegante</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Playfair Display", serif;
+      }
+
+      .font-inter {
+        font-family: "Inter", sans-serif;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 overflow-x-hidden">
+    <!-- MENU -->
+    <!-- ✅ HEADER entra aqui -->
+    <header class="sticky top-0 z-50 bg-[#F5F0E6] border-b shadow-sm">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+        <div>
+          <img
+            src="images/logo-infinitus.png"
+            alt="Logo"
+            class="h-20 md:h-28 lg:h-32 mx-auto"
+          />
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm font-inter">
+          <a href="#" class="hover:underline">CHAPÉUS</a>
+          <a href="#" class="hover:underline">Botas</a>
+          <a href="#" class="hover:underline">Homens</a>
+          <a href="#" class="hover:underline">Mulheres</a>
+          <a href="#" class="hover:underline">Acessórios</a>
+        </nav>
+
+        <!-- ÍCONES -->
+        <div class="hidden md:flex items-center space-x-6 text-[#3F1E1F]">
+          <a href="#" aria-label="Login">
+            <i data-lucide="user" class="w-5 h-5"></i>
+          </a>
+          <a href="#" aria-label="Buscar">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </a>
+          <a href="#" aria-label="Carrinho">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          </a>
+        </div>
+        <!-- ÍCONES FIM -->
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex flex-col px-4 py-2 space-y-2 md:hidden bg-white border-t text-sm font-inter"
+      >
+        <a href="#" class="hover:underline">Chapéus</a>
+        <a href="#" class="hover:underline">Botas</a>
+        <a href="#" class="hover:underline">Homens</a>
+        <a href="#" class="hover:underline">Mulheres</a>
+        <a href="#" class="hover:underline">Acessórios</a>
+        <!-- Ícones no menu mobile -->
+        <div class="border-t flex justify-center gap-6 mt-4 text-[#3F1E1F]">
+          <a href="#" aria-label="Login">
+            <i data-lucide="user" class="w-5 h-5"></i>
+          </a>
+          <a href="#" aria-label="Buscar">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </a>
+          <a href="#" aria-label="Carrinho">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- CARROSSEL -->
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 - Moça -->
+        <div class="swiper-slide">
+          <div
+            class="relative w-full min-h-[280px] md:aspect-[16/6] overflow-hidden"
+          >
+            <img
+              src="images/linda-moca.png"
+              class="absolute inset-0 w-full h-full object-cover object-[50%_5%]"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"
+            >
+              <h2
+                class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold translate-y-[40px] md:translate-y-[60px] text-center px-4"
+              >
+                Estilo que atravessa gerações
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Homem -->
+        <div class="swiper-slide">
+          <div
+            class="relative w-full min-h-[280px] md:aspect-[16/6] overflow-hidden"
+          >
+            <img
+              src="images/cowboy-alta.png"
+              class="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"
+            >
+              <h2
+                class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold translate-y-[40px] md:translate-y-[60px] text-center px-4"
+              >
+                Para todos os caminhos
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Casal -->
+        <div class="swiper-slide">
+          <div
+            class="relative w-full min-h-[280px] md:aspect-[16/6] overflow-hidden"
+          >
+            <img
+              src="images/casal.png"
+              class="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"
+            >
+              <h2
+                class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold translate-y-[40px] md:translate-y-[60px] text-center px-4"
+              >
+                Sua história começa com um chapéu
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- PRODUTOS VÊM DEPOIS AQUI -->
+
+    <!-- FOOTER -->
+    <footer class="bg-[#F5F0E6] text-sm text-gray-700 pt-12 px-6 md:px-16">
+      <!-- Newsletter -->
+      <div class="text-center mb-12">
+        <h2 class="text-lg md:text-xl font-semibold tracking-wide">
+          CADASTRE-SE PARA RECEBER NOVIDADES
+        </h2>
+        <form class="mt-4 flex justify-center items-center max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Seu Email"
+            class="w-full border border-gray-400 px-4 py-2 focus:outline-none"
+          />
+          <button type="submit" class="bg-black text-white px-4 py-2 ml-2">
+            ➝
+          </button>
+        </form>
+        <p class="mt-2 text-xs text-gray-500 max-w-sm mx-auto">
+          AO FORNECER SEU E-MAIL, VOCÊ CONCORDA COM A NOSSA
+          <a href="#" class="underline">POLÍTICA DE PRIVACIDADE</a> &
+          <a href="#" class="underline">TERMOS E CONDIÇÕES</a>.
+        </p>
+      </div>
+
+      <!-- Links organizados -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left mb-8"
+      >
+        <div>
+          <h3 class="font-semibold mb-2">SERVIÇOS DO CLIENTE</h3>
+          <ul class="space-y-1">
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Envio</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Status dos Pedidos</a></li>
+            <li><a href="#">Guia de Ajustes</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Atacado</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">SOBRE A INFINITUS</h3>
+          <ul class="space-y-1">
+            <li><a href="#">Nossa história</a></li>
+            <li><a href="#">Filantropia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">LOJAS</h3>
+          <ul class="space-y-1">
+            <li><a href="#">Encontre uma loja</a></li>
+            <li><a href="#">Infinitus Brasil</a></li>
+            <li><a href="#">Infinitus Europa</a></li>
+            <li><a href="#">Infinitus Global</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">REDES</h3>
+          <ul class="space-y-1">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Créditos -->
+      <div
+        class="text-center text-xs text-gray-500 pb-8 border-t border-gray-300 pt-6"
+      >
+        <p>© 2025 INFINITUS. Todos os direitos reservados.</p>
+        <div class="mt-2 space-x-3">
+          <a href="#" class="underline">Termos & Condições</a>
+          <a href="#" class="underline">Política de Privacidade</a>
+          <a href="#" class="underline">Acessibilidade</a>
+          <a href="#" class="underline"
+            >Não venda minhas informações pessoais</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
